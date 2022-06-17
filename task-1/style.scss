@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #456fe8;
+  .container {
+    width: 50vw;
+    min-height: 20vw;
+    border-radius: 5px;
+    background-color: white;
+    padding: 2vw;
+    article {
+      input {
+        width: 70%;
+        height: 3vw;
+        font-size: 2vw;
+        border: none;
+        border-bottom: 3px solid gainsboro;
+        outline: none;
+        padding: 1vw 0;
+
+        &:focus {
+          border-bottom: 3px solid dodgerblue;
+        }
+      }
+
+      button {
+        width: 10vw;
+        height: 2.5vw;
+        font-size: 1.5vw;
+        margin-left: 2vw;
+      }
+    }
+
+    section {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      margin-top: 2vw;
+      gap: 1vw;
+      transform: 1s;
+      .box {
+        width: 4vw;
+        height: 4vw;
+        color: white;
+        font-size: 2vw;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: greenyellow;
+        animation: style 1s linear infinite;
+      }
+      @keyframes style {
+        0% {
+          transform: scale(1);
+        }
+        25% {
+          transform: scale(1.1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        75% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    }
+
+    .hide {
+      display: none;
+    }
+  }
+}
