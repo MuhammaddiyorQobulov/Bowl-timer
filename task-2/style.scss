@@ -24,6 +24,9 @@ body {
     h1 {
       font-size: 2.2vw;
     }
+    h2 {
+      font-size: 2vw;
+    }
 
     p {
       font-size: 0.9vw;
@@ -40,10 +43,13 @@ body {
     article {
       display: flex;
       justify-content: space-around;
+      align-items: center;
       input {
         cursor: pointer;
-        width: 80%;
+        width: 22vw;
+        height:.5vw;
         outline: none;
+        
       }
     }
 
@@ -59,14 +65,11 @@ body {
         height: 4vw;
         border-radius: 5px;
 
-        div h2:first-child {
-          text-align: center;
-        }
         .switch {
           position: relative;
           display: inline-block;
-          width: 60px;
-          height: 34px;
+          width: 4vw;
+          height: 2.2vw;
         }
 
         .switch input {
@@ -89,10 +92,10 @@ body {
         .slider:before {
           position: absolute;
           content: "";
-          height: 26px;
-          width: 26px;
-          left: 4px;
-          bottom: 4px;
+          height: 2vw;
+          width: 2vw;
+          left: 0.15vw;
+          bottom: 0.1vw;
           background-color: white;
           transition: 0.4s;
         }

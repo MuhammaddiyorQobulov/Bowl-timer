@@ -25,6 +25,9 @@ body .container {
 body .container h1 {
   font-size: 2.2vw;
 }
+body .container h2 {
+  font-size: 2vw;
+}
 body .container p {
   font-size: 0.9vw;
   opacity: 0.6;
@@ -40,10 +43,12 @@ body .container nav {
 body .container article {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 body .container article input {
   cursor: pointer;
-  width: 80%;
+  width: 22vw;
+  height: 0.5vw;
   outline: none;
 }
 body .container section div {
@@ -58,14 +63,11 @@ body .container section div {
   border-radius: 5px;
   /* Rounded sliders */
 }
-body .container section div div h2:first-child {
-  text-align: center;
-}
 body .container section div .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 4vw;
+  height: 2.2vw;
 }
 body .container section div .switch input {
   opacity: 0;
@@ -85,10 +87,10 @@ body .container section div .slider {
 body .container section div .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
+  height: 2vw;
+  width: 2vw;
+  left: 0.15vw;
+  bottom: 0.1vw;
   background-color: white;
   transition: 0.4s;
 }

@@ -13,8 +13,6 @@ let numberStr = "0123456789";
 let symbolStr = "_-@#$&*/:;";
 let newArr = "";
 
-
-
 function markArr() {
   if (number.checked == true) {
     newArr += numberStr;
